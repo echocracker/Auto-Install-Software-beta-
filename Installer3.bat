@@ -27,40 +27,11 @@ if '%errorlevel%' NEQ '0' (
 ::=======================================Package for Running=======================================
 @echo off
 cls
-echo IT_City Standard program installer V2
+echo Crackies beta installer
 @echo off
 
- "%~dp0\Pack\aimp.exe" /S /Auto /norestart
-  echo Aimp Installed Successful!
- "%~dp0\Pack\LineInst.exe" /S /Auto /norestart
-  echo Line Installed Successful!
- "%~dp0\Pack\PhotoScapeSetup.exe" /S /Auto /norestart
-  echo Photoscape Installed Successful!
- "%~dp0\Pack\Teams_windows.exe" /S /Auto /norestart
-  echo Teams Installed Successful!
- "%~dp0\Pack\wrar.exe" /S /Auto /norestart
-  echo Winrar Installed Successful!
- "%~dp0\Pack\ZoomInstaller.exe" /S /Auto /norestart
-  echo Zoom Installed Successful!
- "%~dp0\Pack\ChromeStandaloneSetup64.exe"
-  echo GoogleChrome Installed Successful!
- "%~dp0\Pack\Adobe 2021_3Pack\Set-up.exe" /S /Auto /norestart
- echo Adobe Pack Installed Successful!
- 
- CD /D "%~dp0\Pack" 2>Nul || Exit \B
- For %%A In (AnyDesk.exe) Do Start  "" "%%A" /sPB /rs
- echo Anydesk Installed Successful!
-
- CD /D "%~dp0\Pack" 2>Nul || Exit \B
- For %%A In (KMPlayer_4.2.2.73.exe) Do Start  "" "%%A" /sPB /rs
- echo KMPlayer Installed Successful!
-
-  CD /D "%~dp0\Pack\Acrobat\Adobe Acrobat XI" 2>Nul || Exit \B
- For %%A In (Setup.exe) Do Start  "" "%%A" /sPB /rs
- echo Acrobat Installed Successful!
-
-:: ====================================Create shortcut Part====================================
-@ECHO OFF
-   CALL Pack\create_shrtct.bat
-
-exit
+::========Example========
+ REM "%~dp0\Test.exe" /S /Auto /norestart  << This package software for install you can custom drive path installer "D:/test/vlc.exe" || /S is mean Silent mode do not show therminal installer || /Auto is mean auto installation || /norestart << Do not restart after install has been finished. || %~dp0 << custom directory path as a default.
+ REM echo Test has been installed! << Comment like a printf (From java programming or another program) 
+::=======================
+REM On line 34 to 35 you can copy paste for use many software.
