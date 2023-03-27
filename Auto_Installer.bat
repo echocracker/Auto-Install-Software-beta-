@@ -35,3 +35,6 @@ echo Crackies beta installer
  REM echo Test has been installed! << Comment like a printf (From java programming or another program) 
 ::=======================
 REM On line 34 to 35 you can copy paste for use many software.
+
+Call create_shrtct.bat
+REM Create_shrtct.bat << you can see next page.
